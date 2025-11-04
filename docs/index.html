@@ -128,9 +128,9 @@
           <div class="audio-box">
             <h2>Mixed Signal</h2>
             <audio id="mixedAudio" controls>
-      <source id="mixedSource" type="audio/flac">
-      Your browser does not support the audio element.
-    </audio>
+              <source id="mixedSource" type="audio/flac">
+              Your browser does not support the audio element.
+            </audio>
           </div>
           <div class="audio-box">
             <h2>Output Signal</h2>
@@ -213,7 +213,15 @@
     function updateAudio() {
       const method = methodSelect.value;
       const interference = interferenceSelect.value;
-      if (!method || !interference) return;
+      
+      console.log("Method:", method, "Interference:", interference); // Debug
+      
+      if (!method || !interference) {
+        console.log("Waiting for both selections...");
+        return;
+      }
+      
+      console.log("Both selected! Proceeding...");
 
       // 🔗 GitHub raw URLs
       const baseURL = "https://raw.githubusercontent.com/ElectronicsClub-IITK/LowkeyHighPass/main/";
