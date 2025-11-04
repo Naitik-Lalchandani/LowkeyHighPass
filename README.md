@@ -1,4 +1,6 @@
-# 🎧 Lowkey HighPass Audio Demo
+# 🎧 Signal Processing Cup 2026  
+### IIT Kanpur : Lowkey High Pass  
+#### Audio Demo with Metrics
 
 Interactive web demo for comparing audio beamforming methods and interference removal techniques.
 
